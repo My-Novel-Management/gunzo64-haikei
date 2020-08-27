@@ -30,18 +30,18 @@ from config import ASSET
 ################################################################
 
 # Constant
-TITLE = "作品タイトル"
-MAJOR, MINOR, MICRO = 0, 0, 1
-COPY = "コピィ"
-ONELINE = "一行説明"
-OUTLINE = "あらすじ"
-THEME = "テーマ"
-GENRE = "ジャンル"
-TARGET = "ターゲット（年代）"
-SIZE = "規定サイズ"
-CONTEST_INFO = "コンテスト情報"
-CAUTION = "注意事項"
-NOTE = "備考"
+TITLE = "拝啓、あなたが嫌いです"
+MAJOR, MINOR, MICRO = 1, 1, 0
+COPY = "あなたがずっと、嫌いでした"
+ONELINE = "仕事バカの夫は死後に犬型ロボットをプレゼントした。妻はそれに「ずっと嫌いでした」と告白する"
+OUTLINE = "約30000字の恋愛中編。仕事で忙しかった夫は死後に自分のAIを載せた犬型ロボットをプレゼントした。それに対して残された妻は告白する。ずっと嫌いでしたと"
+THEME = "人にとって言葉の定義は異なる"
+GENRE = "恋愛／SF"
+TARGET = "20-40years"
+SIZE = "原稿70-250枚（20K-80K）"
+CONTEST_INFO = "群像新人賞"
+CAUTION = ""
+NOTE = "エブリスタの妄想コンテストに応募した作品のリメイク"
 SITES = ["エブリスタ", "小説家になろう", "ノベルアッププラス", "カクヨム"]
 TAGS = ["ドラマ",]
 RELEASED = (1, 1, 2020)
@@ -55,6 +55,32 @@ def ep_xxx(w: World):
 
 def ch_main(w: World):
     return w.chapter('main',
+            )
+
+
+# Notes
+def write_note(w: World):
+    return w.writer_note("覚書",
+            )
+
+def plot_note(w: World):
+    return w.writer_note("プロットメモ",
+            )
+
+def chara_note(w: World):
+    return w.writer_note("人物メモ",
+            )
+
+def stage_note(w: World):
+    return w.writer_note("舞台メモ",
+            )
+
+def theme_note(w: World):
+    return w.writer_note("テーマメモ",
+            )
+
+def motif_note(w: World):
+    return w.writer_note("モチーフメモ",
             )
 
 
@@ -79,6 +105,12 @@ def main(): # pragma: no cover
     w.config.set_taginfos(*TAGS)
     w.config.set_released(*RELEASED)
     return w.run(
+            write_note(w),
+            plot_note(w),
+            chara_note(w),
+            stage_note(w),
+            theme_note(w),
+            motif_note(w),
             ch_main(w),
             )
 
