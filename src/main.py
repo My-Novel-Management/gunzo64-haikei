@@ -19,13 +19,13 @@ from config import ASSET
 #
 #   1. Initialize
 #   2. Story memo
-#   3. Structure    - 1/8
+#   3. Structure    - 1/8: 3K
 #   4. Spec
-#   5. Plot         - 1/4
+#   5. Plot         - 1/4: 7K
 #   6. Scenes
-#   7. Conte        - 1/2
+#   7. Conte        - 1/2: 15K
 #   8. Layout
-#   9. Draft        - 1/1
+#   9. Draft        - 1/1: 30K
 #
 ################################################################
 
@@ -44,15 +44,28 @@ CAUTION = ""
 NOTE = "エブリスタの妄想コンテストに応募した作品のリメイク"
 SITES = ["エブリスタ", "小説家になろう", "ノベルアッププラス", "カクヨム"]
 TAGS = ["ドラマ",]
-RELEASED = (1, 1, 2020)
+RELEASED = (9, 1, 2020)
 
 
 # Episodes
-def ep_xxx(w: World):
-    return w.episode('episode_title',
-            outline="description")
+def ep_beginning(w: World):
+    return w.episode('書き出し',
+            )
+
+def ep_his_dead(w: World):
+    return w.episode("彼の死",
+            )
+
+def ep_dog_robo(w: World):
+    return w.episode("犬のロボット",
+            )
+
+def ep_truth(w: World):
+    return w.episode("真相",
+            )
 
 
+# Chapters
 def ch_main(w: World):
     return w.chapter('main',
             )
@@ -65,10 +78,24 @@ def write_note(w: World):
 
 def plot_note(w: World):
     return w.writer_note("プロットメモ",
+            "あなたが嫌いです、という告白文から始まる",
+            "嫌いというのが実は彼女にとっての「好き」だった、が真実",
+            "結婚した彼はその「嫌いが好き」を理解していて、嫌いと言われ続けていた",
+            "いつかは好きに変えたいと思っていたが、志半ばで倒れてしまう",
+            "彼女は死んだ彼に対して「嫌い」と日々を綴る",
+            "それはロボットに愚痴るようにして記録されていた",
+            "最後に全ての記録文章が「好き」に変わる",
+            "そこで娘も「好き」を知る",
             )
 
 def chara_note(w: World):
     return w.writer_note("人物メモ",
+            "主人公の彼女",
+            "隆文：主人公の夫で技術者",
+            "主人公の娘",
+            "ロボット犬",
+            "診療所の先生",
+            "ブライアン",
             )
 
 def stage_note(w: World):
@@ -84,6 +111,7 @@ def motif_note(w: World):
             )
 
 
+# Main
 def main(): # pragma: no cover
     w = World.create_world(f"{TITLE}")
     w.config.set_version(MAJOR, MINOR, MICRO)
