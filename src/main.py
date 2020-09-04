@@ -68,6 +68,10 @@ def ep_truth(w: World):
 # Chapters
 def ch_main(w: World):
     return w.chapter('main',
+            ep_beginning(w),
+            ep_his_dead(w),
+            ep_dog_robo(w),
+            ep_truth(w),
             )
 
 
