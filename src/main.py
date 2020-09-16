@@ -12,7 +12,7 @@ from storybuilder.assets import basic
 from storybuilder.assets import common_rubi
 from config import ASSET
 # import scenes
-# from scenes import xxx
+from scenes import Stage
 
 
 ################################################################
@@ -50,6 +50,7 @@ RELEASED = (9, 1, 2020)
 # Episodes
 def ep_beginning(w: World):
     return w.episode('書き出し',
+            Stage.sc_1(w),
             )
 
 def ep_his_dead(w: World):
@@ -68,6 +69,14 @@ def ep_truth(w: World):
 # Chapters
 def ch_main(w: World):
     return w.chapter('main',
+            w.plot_setup("$satomiは夫を「嫌い」だった"),
+            w.plot_setup("娘の$ayanoと自分を置いて、夫は仕事に打ち込んでいた"),
+            w.plot_turnpoint("夫が死んだ"),
+            w.plot_develop("夫が残したロス用ロボット犬が家にやってくる"),
+            w.plot_develop("$satomiはその犬に日々の会話を残しつつ$ayanoの面倒を見る"),
+            w.plot_develop(""),
+            w.plot_turnpoint(""),
+            w.plot_resolve(""),
             ep_beginning(w),
             ep_his_dead(w),
             ep_dog_robo(w),
