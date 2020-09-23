@@ -31,7 +31,7 @@ from scenes import Stage
 
 # Constant
 TITLE = "拝啓、あなたが嫌いです"
-MAJOR, MINOR, MICRO = 1, 1, 0
+MAJOR, MINOR, MICRO = 1, 3, 0
 COPY = "あなたがずっと、嫌いでした"
 ONELINE = "仕事バカの夫は死後に犬型ロボットをプレゼントした。妻はそれに「ずっと嫌いでした」と告白する"
 OUTLINE = "約30000字の恋愛中編。仕事で忙しかった夫は死後に自分のAIを載せた犬型ロボットをプレゼントした。それに対して残された妻は告白する。ずっと嫌いでしたと"
@@ -50,19 +50,45 @@ RELEASED = (9, 1, 2020)
 # Episodes
 def ep_beginning(w: World):
     return w.episode('書き出し',
-            Stage.sc_1(w),
+            w.plot_note("あなたが嫌いです、という音声レターの書き出し"),
+            w.plot_note("$ayanoが生まれてから特に夫は家に帰ってこなくなった"),
+            w.plot_note("仕事熱心で、帰ってきてもすぐに部屋に入って寝てしまう"),
+            w.plot_note("ある日、$satomiは夫に弁当を届けに彼の会社まで娘と二人で出かけた"),
+            w.plot_note(""),
             )
 
 def ep_his_dead(w: World):
     return w.episode("彼の死",
+            w.plot_note("$takaの訃報がもたらされる"),
+            w.plot_note("彼の葬儀を行う"),
+            w.plot_note("親族や両親から色々と言われる"),
+            w.plot_note("$satomiの父親と少しだけ顔を合わせる"),
+            w.plot_note("母はまだ施設に入っていると知り、安堵する"),
+            w.plot_note("娘と二人きりになり、どうすることもできなく途方にくれる"),
             )
 
 def ep_dog_robo(w: World):
     return w.episode("犬のロボット",
+            w.plot_note("小包でロボットが送られてくる"),
+            w.plot_note("彼の遺言で、ロスケア犬型ロボットの試作機がやってきたのだ"),
             )
 
 def ep_truth(w: World):
     return w.episode("真相",
+            w.plot_note("彼の命日、一周忌に二人で墓参りをする"),
+            w.plot_note("毎日録音をしてきた天国の彼への音声レターはそろそろいっぱいになっただろうか"),
+            w.plot_note("墓につくと、突然犬が彼の声でしゃべりはじめた"),
+            w.plot_note("彼は$satomiが「好き」を「嫌い」と言っていることに気づいていた"),
+            w.plot_note("彼女は小さい頃に母親から「嫌い」と言われ続け、それを自然と「好き」に変換してしまうように意識を改変してしまった"),
+            w.plot_note("それは$satomiの人生を不幸にしてしまっていた"),
+            w.plot_note("彼女は愛した人間に「嫌い」と伝えてしまうのだ"),
+            w.plot_note("それを理解していて$takaは彼女と一緒になった"),
+            w.plot_note("もともと長生きはできないと考えていた$takaは、自分が死んでから彼女にかけられたその呪いを説くように考えた"),
+            w.plot_note("録音された音声レターが再生される"),
+            w.plot_note("けれどそれは「嫌い」を「好き」に変換したものだった"),
+            w.plot_note("たくさんの、彼への、娘への「愛」がそこには記録されていた"),
+            w.plot_note("上書きされた「好き」で、$satomiは本当の「好き」に気づく"),
+            w.plot_note("娘に「好き」と伝えた"),
             )
 
 
