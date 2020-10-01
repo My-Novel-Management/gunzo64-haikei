@@ -14,7 +14,11 @@ ASSET = {
             ),
         "STAGES": (
             # (tag / name / parent / (geometry) / info)
-            ("Home", "聡美のマンション", "Tokyo"),
+            ("Toshima", "豊島区", "Tokyo"),
+            ("Ikebukuro", "池袋", "Toshima"),
+            ("Hachiouji", "八王子市", "Tokyo"),
+            ("Home", "聡美のマンション", "Hachiouji"),
+            ("Company", "隆文の会社", "Tokyo"),
             ),
         "DAYS": (
             # (tag / name / month / day / year)

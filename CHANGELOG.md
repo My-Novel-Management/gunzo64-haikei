@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [1.5.0] - 2020-10-01
+### Added
+- plot
+
 ## [1.1.0] - 2020-09-15
 ### Added
 - archive content
@@ -16,6 +20,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - This CHANGELOG file to hopefully serve as an evolving example of a standardized open source project CHANGELOG.
 - README one line implemented.
 
-[Unreleased]: https://github.com/My-Novel-Management/gunzo64-haikei/compare/v1.1.0...HEAD
+[Unreleased]: https://github.com/My-Novel-Management/gunzo64-haikei/compare/v1.5.0...HEAD
+[1.5.0]: https://github.com/My-Novel-Management/gunzo64-haikei/releases/v1.5.0
 [1.1.0]: https://github.com/My-Novel-Management/gunzo64-haikei/releases/v1.1.0
 [0.0.1]: https://github.com/My-Novel-Management/gunzo64-haikei/releases/v0.0.1
