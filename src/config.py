@@ -25,6 +25,7 @@ ASSET = {
             ("Dining", "食堂", "Home"),
             ("ReadingRoom", "書斎", "Home"),
             ("Company", "隆文の会社", "Tokyo"),
+            ("Office", "オフィス", "Company"),
             ("Street", "路地", "Tokyo"),
             ("Park", "公園", "Tokyo"),
             ("Cemetery", "墓地", "Tokyo"),
@@ -34,6 +35,7 @@ ASSET = {
             ("Station", "駅", "Tokyo"),
             ("Subway", "地下鉄", "Tokyo"),
             ("InTrain", "電車内", "Tokyo"),
+            ("NursingHome", "介護施設", "Tokyo"),
             ),
         "DAYS": (
             # (tag / name / month / day / year)
