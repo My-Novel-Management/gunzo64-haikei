@@ -15,10 +15,25 @@ ASSET = {
         "STAGES": (
             # (tag / name / parent / (geometry) / info)
             ("Toshima", "豊島区", "Tokyo"),
+            ("Ohta", "大田区", "Tokyo"),
             ("Ikebukuro", "池袋", "Toshima"),
             ("Hachiouji", "八王子市", "Tokyo"),
             ("Home", "聡美のマンション", "Hachiouji"),
+            ("Living", "リビング", "Home"),
+            ("Bedroom", "寝室", "Home"),
+            ("Kitchen", "台所", "Home"),
+            ("Dining", "食堂", "Home"),
+            ("ReadingRoom", "書斎", "Home"),
             ("Company", "隆文の会社", "Tokyo"),
+            ("Street", "路地", "Tokyo"),
+            ("Park", "公園", "Tokyo"),
+            ("Cemetery", "墓地", "Tokyo"),
+            ("CeremonyHall", "葬儀場", "Tokyo"),
+            ("Market", "スーパー", "Tokyo"),
+            ("Famires", "ファミレス", "Tokyo"),
+            ("Station", "駅", "Tokyo"),
+            ("Subway", "地下鉄", "Tokyo"),
+            ("InTrain", "電車内", "Tokyo"),
             ),
         "DAYS": (
             # (tag / name / month / day / year)

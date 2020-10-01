@@ -31,7 +31,7 @@ from scenes import Stage
 
 # Constant
 TITLE = "拝啓、あなたが嫌いです"
-MAJOR, MINOR, MICRO = 1, 5, 0
+MAJOR, MINOR, MICRO = 1, 6, 0
 COPY = "あなたがずっと、嫌いでした"
 ONELINE = "仕事バカの夫は死後に犬型ロボットをプレゼントした。妻はそれに「ずっと嫌いでした」と告白する"
 OUTLINE = "約30000字の恋愛中編。仕事で忙しかった夫は死後に自分のAIを載せた犬型ロボットをプレゼントした。それに対して残された妻は告白する。ずっと嫌いでしたと"
