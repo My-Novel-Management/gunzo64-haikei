@@ -79,6 +79,16 @@ def ep_dog_robo(w: World):
     return w.episode("犬のロボット",
             w.plot_note("小包でロボットが送られてくる"),
             w.plot_note("彼の遺言で、ロスケア犬型ロボットの試作機がやってきたのだ"),
+            w.plot_note("彼がペットロスケアを目的としたロボット犬を開発していたと知る"),
+            w.plot_note("そのロボット犬は$satomiの話し相手となった"),
+            w.plot_note("その日から$satomiはロボット犬のモニターをすることになった"),
+            w.plot_note("ロボットだけれど普通の犬のように扱うことにする"),
+            w.plot_note("世話する対象が増えたことで$satomiの精神も少し安定し始める"),
+            w.plot_note("彼女は犬に$takaに対する気持ちを語って聞かせた"),
+            w.plot_note("彼との出会い"),
+            w.plot_note("彼と結婚することになり"),
+            w.plot_note("両親、特に母親との面会のことも"),
+            w.plot_note("そうこうしているうちに月日が流れた"),
             )
 
 def ep_truth(w: World):
