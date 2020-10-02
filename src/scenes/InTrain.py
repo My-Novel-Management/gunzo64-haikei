@@ -12,5 +12,6 @@ from storybuilder.builder.world import World
 ## scenes
 def with_daughter(w: World):
     return w.scene('娘と鉄道内で',
+            w.change_stage("InTrain"),
             )
 

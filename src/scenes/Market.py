@@ -12,5 +12,6 @@ from storybuilder.builder.world import World
 ## scenes
 def his_dead_news(w: World):
     return w.scene('訃報',
+            w.change_stage("Market"),
             )
 

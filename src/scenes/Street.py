@@ -12,5 +12,6 @@ from storybuilder.builder.world import World
 ## scenes
 def goto_his_office(w: World):
     return w.scene('お弁当を届けに',
+            w.change_stage("Street"),
             )
 

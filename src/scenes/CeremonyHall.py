@@ -12,5 +12,6 @@ from storybuilder.builder.world import World
 ## scenes
 def his_ceremony(w: World):
     return w.scene('彼の葬儀',
+            w.change_stage("CeremonyHall"),
             )
 

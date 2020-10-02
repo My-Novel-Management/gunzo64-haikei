@@ -12,5 +12,6 @@ from storybuilder.builder.world import World
 ## scenes
 def talk_with_dad(w: World):
     return w.scene('父と話す',
+            w.change_stage("Famires"),
             )
 

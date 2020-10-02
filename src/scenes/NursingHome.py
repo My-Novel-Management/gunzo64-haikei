@@ -12,5 +12,6 @@ from storybuilder.builder.world import World
 ## scenes
 def meet_mother(w: World):
     return w.scene('母との面会',
+            w.change_stage("NursingHome"),
             )
 
