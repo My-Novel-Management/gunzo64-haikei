@@ -10,7 +10,8 @@ from storybuilder.builder.world import World
 
 
 ## scenes
-def scene_name(w: World):
-    return w.scene('__scene__',
+def talk_about_pet(w: World):
+    return w.scene('ペットの話',
+            w.change_stage("Dining"),
             )
 

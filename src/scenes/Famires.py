@@ -10,7 +10,8 @@ from storybuilder.builder.world import World
 
 
 ## scenes
-def scene_name(w: World):
-    return w.scene('__scene__',
+def talk_with_dad(w: World):
+    return w.scene('父と話す',
+            w.change_stage("Famires"),
             )
 

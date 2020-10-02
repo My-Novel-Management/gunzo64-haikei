@@ -12,7 +12,24 @@ from storybuilder.assets import basic
 from storybuilder.assets import common_rubi
 from config import ASSET
 # import scenes
-from scenes import Stage
+from scenes import BedRoom
+from scenes import Cemetery
+from scenes import CeremonyHall
+from scenes import Company
+from scenes import Dining
+from scenes import Famires
+from scenes import Home
+from scenes import InTrain
+from scenes import Kitchen
+from scenes import Living
+from scenes import Market
+from scenes import NursingHome
+from scenes import Office
+from scenes import Park
+from scenes import ReadingRoom
+from scenes import Station
+from scenes import Street
+from scenes import Subway
 
 
 ################################################################
@@ -31,7 +48,7 @@ from scenes import Stage
 
 # Constant
 TITLE = "拝啓、あなたが嫌いです"
-MAJOR, MINOR, MICRO = 1, 5, 0
+MAJOR, MINOR, MICRO = 1, 6, 0
 COPY = "あなたがずっと、嫌いでした"
 ONELINE = "仕事バカの夫は死後に犬型ロボットをプレゼントした。妻はそれに「ずっと嫌いでした」と告白する"
 OUTLINE = "約30000字の恋愛中編。仕事で忙しかった夫は死後に自分のAIを載せた犬型ロボットをプレゼントした。それに対して残された妻は告白する。ずっと嫌いでしたと"
@@ -57,6 +74,13 @@ def ep_beginning(w: World):
             w.plot_note("会社に行くと、彼が意外とみんなから頼られていたり、人気があったりするのが分かった"),
             w.plot_note("けれど帰り際、自分とは違う仲良さそうな家族の姿を目にする"),
             w.plot_note("家庭に恵まれない自分の境遇を思う"),
+            Living.spacious(w),
+            Home.tired_my_husband(w),
+            Street.goto_his_office(w),
+            InTrain.with_daughter(w),
+            Office.his_work_place(w),
+            Park.shape_of_family(w),
+            Living.daughter_and_me(w),
             )
 
 def ep_his_dead(w: World):
@@ -73,6 +97,13 @@ def ep_his_dead(w: World):
             w.plot_note("$satomiの父親と少しだけ顔を合わせる"),
             w.plot_note("母はまだ施設に入っていると知り、安堵する"),
             w.plot_note("娘と二人きりになり、どうすることもできなく途方にくれる"),
+            Home.not_back_home(w),
+            Dining.talk_about_pet(w),
+            Market.his_dead_news(w),
+            CeremonyHall.his_ceremony(w),
+            Famires.talk_with_dad(w),
+            NursingHome.meet_mother(w),
+            Home.missing(w),
             )
 
 def ep_dog_robo(w: World):
@@ -89,6 +120,8 @@ def ep_dog_robo(w: World):
             w.plot_note("彼と結婚することになり"),
             w.plot_note("両親、特に母親との面会のことも"),
             w.plot_note("そうこうしているうちに月日が流れた"),
+            Living.dog_robo(w),
+            Park.with_dog(w),
             )
 
 def ep_truth(w: World):
@@ -107,6 +140,8 @@ def ep_truth(w: World):
             w.plot_note("たくさんの、彼への、娘への「愛」がそこには記録されていた"),
             w.plot_note("上書きされた「好き」で、$satomiは本当の「好き」に気づく"),
             w.plot_note("娘に「好き」と伝えた"),
+            Cemetery.his_anniversary(w),
+            Cemetery.her_truth(w),
             )
 
 

@@ -10,7 +10,14 @@ from storybuilder.builder.world import World
 
 
 ## scenes
-def scene_name(w: World):
-    return w.scene('__scene__',
+def shape_of_family(w: World):
+    return w.scene("家族の形",
+            w.change_stage("Park"),
+            )
+
+
+def with_dog(w: World):
+    return w.scene('犬と娘と',
+            w.change_stage("Park"),
             )
 

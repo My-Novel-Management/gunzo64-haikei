@@ -10,7 +10,8 @@ from storybuilder.builder.world import World
 
 
 ## scenes
-def scene_name(w: World):
-    return w.scene('__scene__',
+def goto_his_office(w: World):
+    return w.scene('お弁当を届けに',
+            w.change_stage("Street"),
             )
 
