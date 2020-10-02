@@ -10,7 +10,17 @@ from storybuilder.builder.world import World
 
 
 ## scenes
-def scene_name(w: World):
-    return w.scene('__scene__',
+def tired_my_husband(w: World):
+    return w.scene("疲れている夫",
+            )
+
+
+def not_back_home(w: World):
+    return w.scene("戻らない夫",
+            )
+
+
+def missing(w: World):
+    return w.scene('彼はもういない',
             )
 

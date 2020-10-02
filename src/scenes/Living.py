@@ -10,7 +10,17 @@ from storybuilder.builder.world import World
 
 
 ## scenes
-def scene_name(w: World):
-    return w.scene('__scene__',
+def spacious(w: World):
+    return w.scene("広い新居",
+            )
+
+
+def daughter_and_me(w: World):
+    return w.scene("娘と私と",
+            )
+
+
+def dog_robo(w: World):
+    return w.scene('犬型ロボット',
             )
 

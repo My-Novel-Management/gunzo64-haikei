@@ -10,7 +10,7 @@ from storybuilder.builder.world import World
 
 
 ## scenes
-def scene_name(w: World):
-    return w.scene('__scene__',
+def with_daughter(w: World):
+    return w.scene('娘と鉄道内で',
             )
 

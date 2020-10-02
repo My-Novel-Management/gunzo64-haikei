@@ -10,7 +10,12 @@ from storybuilder.builder.world import World
 
 
 ## scenes
-def scene_name(w: World):
-    return w.scene('__scene__',
+def his_anniversary(w: World):
+    return w.scene("彼の命日",
+            )
+
+
+def her_truth(w: World):
+    return w.scene('彼女の真実',
             )
 

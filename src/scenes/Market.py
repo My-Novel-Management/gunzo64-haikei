@@ -10,7 +10,7 @@ from storybuilder.builder.world import World
 
 
 ## scenes
-def scene_name(w: World):
-    return w.scene('__scene__',
+def his_dead_news(w: World):
+    return w.scene('訃報',
             )
 
