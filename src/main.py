@@ -76,6 +76,7 @@ def ep_beginning(w: World):
             w.plot_note("家庭に恵まれない自分の境遇を思う"),
             Living.spacious(w),
             Home.tired_my_husband(w),
+            Dining.talk_with_taka(w),
             Street.goto_his_office(w),
             InTrain.with_daughter(w),
             Office.his_work_place(w),
