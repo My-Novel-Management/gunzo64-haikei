@@ -56,6 +56,17 @@ def tired_my_husband(w: World):
             )
 
 
+def goout_with_bento(w: World):
+    sato, ayano = w.get("satomi"), w.get("ayano")
+    return w.scene("弁当と一緒におでかけを",
+            w.change_time("morning"),
+            sato.be("久しぶりに出かける準備をしている"),
+            sato.do("薄化粧だけれどそれでもいつもより入念に仕上げる"),
+            sato.do("$ayanoは起きてきょろきょろと落ち着かない様子で"),
+            # TODO:出かけるところから
+            )
+
+
 def not_back_home(w: World):
     sato = w.get("satomi")
     return w.scene("戻らない夫",

@@ -20,7 +20,7 @@ ASSET = {
             ("Hachiouji", "八王子市", "Tokyo"),
             ("Home", "聡美のマンション", "Hachiouji"),
             ("Living", "リビング", "Home"),
-            ("Bedroom", "寝室", "Home"),
+            ("BedRoom", "寝室", "Home"),
             ("Kitchen", "台所", "Home"),
             ("Dining", "食堂", "Home"),
             ("ReadingRoom", "書斎", "Home"),

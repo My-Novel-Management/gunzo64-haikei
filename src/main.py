@@ -77,6 +77,7 @@ def ep_beginning(w: World):
             Living.spacious(w),
             Home.tired_my_husband(w),
             Dining.talk_with_taka(w),
+            BedRoom.one_idea(w),
             Street.goto_his_office(w),
             InTrain.with_daughter(w),
             Office.his_work_place(w),
