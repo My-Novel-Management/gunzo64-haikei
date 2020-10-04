@@ -12,6 +12,7 @@ from storybuilder.assets import basic
 from storybuilder.assets import common_rubi
 from config import ASSET
 # import scenes
+from scenes import AroundHome
 from scenes import BedRoom
 from scenes import Cemetery
 from scenes import CeremonyHall
@@ -78,12 +79,21 @@ def ep_beginning(w: World):
             Home.tired_my_husband(w),
             Dining.talk_with_taka(w),
             BedRoom.one_idea(w),
+            )
+
+
+def ep_deliver_bento(w: World):
+    return w.episode("お弁当を届けに",
+            Home.goout_with_bento(w),
+            AroundHome.goto_his_office(w),
             Street.goto_his_office(w),
+            Station.have_a_trouble(w),
             InTrain.with_daughter(w),
             Office.his_work_place(w),
             Park.shape_of_family(w),
             Living.daughter_and_me(w),
             )
+
 
 def ep_his_dead(w: World):
     return w.episode("彼の死",
@@ -162,6 +172,7 @@ def ch_main(w: World):
             w.plot_resolve("$satomiが「嫌い」という言葉を「好き」の意味に変換して使っていたことを告げる"),
             w.plot_resolve("記録していた$satomiの亡き夫へのボイスレターの「嫌い」を全て「好き」に上書きし、彼女の呪いを解いた"),
             ep_beginning(w),
+            ep_deliver_bento(w),
             ep_his_dead(w),
             ep_dog_robo(w),
             ep_truth(w),
