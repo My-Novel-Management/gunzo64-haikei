@@ -7,10 +7,12 @@ Story Config
 ASSET = {
         "PERSONS": (
             # (tag / name / full / age (birth) / job / call / info)
-            ('satomi', '聡美', '', 33,(1,1), 'female', '主婦', "me:私"),
-            ("ayano", "文乃", "", 3,(1,1), "female", "娘", "me:あや"),
-            ("taka", "隆文", "", 35,(1,1), "male", "技師", "me:僕"),
+            ('satomi', '聡美', '結城,聡美', 33,(1,1), 'female', '主婦', "me:私"),
+            ("ayano", "文乃", "結城,文乃", 3,(1,1), "female", "娘", "me:あや"),
+            ("taka", "隆文", "結城,隆文", 35,(1,1), "male", "技師", "me:僕"),
             ("tanaka", "ブライアン", "田中,ブライアン", 35,(1,1), "male", "技師", "me:オレ"),
+            ("kotani", "小谷", "小谷,富美", 27,(1,1), "female", "会社員", "me:わたし"),
+            ("take", "竹中", "竹中,吉信", 45,(1,1), "male", "会社員", "me:俺"),
             ),
         "STAGES": (
             # (tag / name / parent / (geometry) / info)
