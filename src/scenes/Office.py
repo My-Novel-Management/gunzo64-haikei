@@ -27,6 +27,17 @@ def his_work_place(w: World):
             kotani.do("含みがありそうな笑みを浮かべる"),
             sato.think("どういう存在なのかよく分からないけれど、好意的に受け入れればいいのかと考える"),
             taka.be("パソコンがたくさん並ぶデスクの中で、隣の人と何やら神妙な顔つきで話し合っている"),
-            sato.do(),
+            sato.do("初めて見る仕事中の彼の姿"),
+            taka.do("モニタを見ながら相談している"),
+            kotani.talk("$ln_takaさん", "奥様が来られてますよ"),
+            taka.talk("え？"),
+            taka.do("$satomiの姿を見つけてにっこりする"),
+            taka.talk("どうしたんだ"),
+            sato.talk("これです"),
+            sato.do("弁当を見せる"),
+            taka.talk("わざわざありがとう",
+                "でも弁当なんていつぶりだ？"),
+            sato.talk("たまには、ね"),
+            sato.do("周囲の目が"),
             )
 
